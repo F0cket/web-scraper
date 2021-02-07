@@ -14,7 +14,7 @@ import sys
 parser = argparse.ArgumentParser(description = "Auto refreshes a website and plays a sound if specified text is present in the source.")
 parser.add_argument("browser", choices=['chrome', 'firefox'], help="Browser to scrape with")
 parser.add_argument("--headless",help="Enable headless browser mode", action="store_true")
-parser.add_argument("-c", "--continuous", help="Continuous Mode. Script will continue to run even after match is found", action="store_true")
+parser.add_argument("-c", "--continuous", help="Script will continue to run even after match is found", action="store_true")
 parser.add_argument("-p", "--disablepopup", help="Do not open URL in default browser when match is found", action="store_false")
 parser.parse_args()
 args = parser.parse_args()
