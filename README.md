@@ -30,11 +30,11 @@ Requirements:
 =====
 
 **Modules:**
-* playsound,
+* playsound
 * selenium
 
 **Others:**
-* gecko driver to scrape with firefox,
+* gecko driver to scrape with firefox
 * chromedriver to scrape with chrome
 
 Currently chrome and firefox are the only browsers supported. Others should be implemented in the future.
