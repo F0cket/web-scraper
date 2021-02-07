@@ -10,6 +10,7 @@ Usage:
 WebScraper.py [-h] [--headless] [-c] [-p] {chrome,firefox}
 
 positional arguments:
+
   {chrome,firefox}    *Browser to scrape with*
   
 optional arguments:
