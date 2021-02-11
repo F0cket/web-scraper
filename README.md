@@ -46,5 +46,4 @@ Currently chrome and firefox are the only browsers supported. Others should be i
 Todo:
 =====
 * implement other browsers
-* implement a setup.py file
 * rewrite in C++
