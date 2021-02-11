@@ -2,7 +2,9 @@
 
 This is a webscraper made in python that beeps when specified text is found on a specified URL page source. It will then open a pop up tab in your computer's default browser. It is quite slow on large pages. I made this in an attempt to purchase an Nvidia RTX 3080 on release without resorting to using a checkout bot as I feel those are simply unfair. I am happy to say it worked like a charm.
 
-
+Installation:
+=====
+pip install requirements.txt
 
 Usage:
 =====
