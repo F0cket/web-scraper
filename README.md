@@ -4,7 +4,7 @@ This is a webscraper made in python that beeps when specified text is found on a
 
 Installation:
 =====
-pip install requirements.txt
+pip install -r requirements.txt
 
 Usage:
 =====
