@@ -1,49 +1,55 @@
-# web-scraper
 
-This is a webscraper made in python that beeps when specified text is found on a specified URL page source. It will then open a pop up tab in your computer's default browser. It is quite slow on large pages. I made this in an attempt to purchase an Nvidia RTX 3080 on release without resorting to using a checkout bot as I feel those are simply unfair. I am happy to say it worked like a charm.
+# Web-Scraper
 
-Installation:
-=====
-pip install -r requirements.txt
+## Overview
+Web-Scraper is a simple Python-based webscraper that beeps when user-specified text is found on a designated URL page source. Following the beep, Web-Scraper will then open a pop-up tab in your computer's default browser. It can be used for a wide range of activities, from checking if a product is back in stock to auto-fetching prices.
 
-Usage:
-=====
-
-WebScraper.py [-h] [--headless] [-c] [-p] {chrome,firefox}
-
-positional arguments:
-
-  {chrome,firefox}    *Browser to scrape with*
-  
-optional arguments:
-
-  -h, --help          *show this help message and exit*
-  
-  --headless          *Enable headless browser mode*
-  
-  -c, --continuous    *Script will continue to run even after match is found*
-  
-  -p, --disablepopup  *Do not open URL in default browser when match is found*
+Please note that Web-Scraper runs slower on larger pages.
 
 
+## Requirements
 
+* Python 3.0
+* Chrome or Firefox web-browser
 
-Requirements:
-=====
-
-**Modules:**
+**Python Modules:**
 * playsound
 * selenium
 
-**Others:**
-* gecko driver to scrape with firefox
-* chromedriver to scrape with chrome
+**Browser-Specific Drivers:**
+* Gecko driver to scrape with Firefox
+* Chromedriver to scrape with Chrome
 
-Currently chrome and firefox are the only browsers supported. Others should be implemented in the future.
+Currently, Chrome and Firefox are the only browsers supported. Support for more browsers will be added in later builds.
+
+
+## Installation
+Install from the source file:
+
+```pip install -r requirements.txt```
+
+## How to Use
+
+```WebScraper.py [-h] [--headless] [-c] [-p] {chrome,firefox}```
+
+Once the script is entered, the console will prompt the user to enter the text they wish to scrape for.
+
+**Positional Arguments:**
+
+  `{chrome,firefox}`    Browser to scrape with
+  
+**Optional Arguments:**
+| Argument| Description |
+|--|--|
+|`-h`, `--help`     |  Show this help message and exit |
+|`--headless`  |Enable headless browser mode|
+| `-c`, `--continuous` |Script will continue to run even after match is found|
+|`-p`, `--disablepopup`|Will not open URL in default browser when match is found|
 
 
 
-Todo:
-=====
-* implement other browsers
-* rewrite in C++
+
+## Future Releases
+Future builds will implement support for additional web-browsers and switch to C++.
+
+
